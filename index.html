@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon (1).ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5f7e9536a4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css" />
+		<title>The Grainery | Restaurant & Steakhouse</title>
+	</head>
+	<body>
+		<header id="header-home">
+      <div class="container">
+        <nav id="main-nav">
+          <img src="img/grainery-logo.png" alt="Grainery logo" id="logo">
+          <ul>
+            <a href="https://www.facebook.com/pg/thegrainery1/photos/?ref=page_internal"><i id="social" class="fab fa-facebook fa-2x"></i></a>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </nav>
+        <div class="header-content">
+          <h1>The Grainery</h1>
+          <p class="lead">Good Friends, Good Food, and Good Times</p>
+          <a href="about.html" class="btn-main mar-right">About Us</a>
+          <a href="menu.html" class="btn-dark mar-left">View Menu</a>
+        </div>
+      </div>
+    </header>
+
+  <section id="about-section" class="section">
+    <div class="container">
+      <h1>About Us</h1>
+      <h3>Current Hours</h3>
+      <p>SUN 11AM - 8PM</p>
+      <p>MON - Fri 11AM - 9PM</p>
+      <p>SAT 6AM - 9PM</p>
+    </div>
+  </section>
+
+
+  <section id="menu-section" class="section">
+    <div class="container">
+      <div>
+        <a href="menu/sample_menu.pdf" download>
+          <p>Download</p>
+        </a>
+      </div>
+    </div>
+  </section>
+    
+
+  <section id="contact-section" class="section">
+    <div class="container">
+    <div class="flex-container">
+      <div class="contact-content">
+        <h1>Contact Us</h1>
+        <div class="address padding-left">
+          <div class="icon-container">
+            <i class="fas fa-map-marker-alt fa-3x icon-padding"></i>
+          </div>
+          <div class="contact-container">
+            <h3>Our Location</h3>
+            <p>256 W Main St
+              Camden, Tennessee</p>
+          </div>
+        </div>
+        <div class="phone padding-left">
+          <div class="icon-container">
+            <i class="fas fa-phone-alt fa-3x"></i>
+          </div>
+          <div class="contact-container">
+            <h3>Our Phone Number</h3>
+            <p>(731) 213-2585</p>
+          </div>
+        </div>
+        <div class="email padding-left">
+          <div class="icon-container">
+            <i class="fas fa-envelope fa-3x"></i>
+          </div>
+         <div class="contact-container">
+            <h3>Our Email</h3>
+            <p>sample@email.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="map-container">
+        <div id="map"></div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+<script>
+    function initMap() {
+      // The location of Uluru
+      var uluru = {lat: -25.344, lng: 131.036};
+      // The map, centered at Uluru
+      var map = new google.maps.Map(
+          document.getElementById('map'), {zoom: 4, center: uluru});
+      // The marker, positioned at Uluru
+      var marker = new google.maps.Marker({position: uluru, map: map});
+    }
+  </script>
+   <script async defer
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBReVETVhJyVGP-ZVpPzCKahE7wKmKUF2s&callback=initMap">
+   </script>
+
+	</body>
+</html>
